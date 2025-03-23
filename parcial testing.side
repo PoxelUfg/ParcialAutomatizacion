@@ -1,0 +1,108 @@
+{
+  "id": "520c0a3d-ba77-4777-9e93-63680c23a789",
+  "version": "2.0",
+  "name": "parcial testing",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "091791fe-af9d-43e9-bc48-43d7285ee46b",
+    "name": "login_record",
+    "commands": [{
+      "id": "2ab21fc6-f29e-49ff-94da-c3de0ba7c39a",
+      "comment": "",
+      "command": "open",
+      "target": "/Login-Avanzado-Php-MySql-JS-CSS-HTML-main/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "beb9da0e-e500-4fff-97b2-8db17dcf174d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a50b472-b3e4-4280-b8f6-48cc589f5262",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.formulario__login > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54f3a4b5-c046-4ade-8cd8-4e3d9975c452",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.formulario__login > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "franciscocarlos510@gmail.com"
+    }, {
+      "id": "b888deb7-394e-45d6-9a34-4d34135b69b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.formulario__login > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2042ae7f-7895-468e-b76c-8b5f2fa7e3b6",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.formulario__login > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "d650acef-7a4c-4325-b04b-71d9e0650375",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Acceder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a2d6c9-ce85-4832-8952-a89d43610f7a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LogOut",
+      "targets": [
+        ["linkText=LogOut", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'LogOut')]", "xpath:link"],
+        ["xpath=//a[contains(@href, ' cerrar_sesion.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'LogOut')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8cd3a8c6-c777-404b-96e1-b16a2027c238",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["091791fe-af9d-43e9-bc48-43d7285ee46b"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
